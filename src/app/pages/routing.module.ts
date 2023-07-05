@@ -4,17 +4,15 @@ import { RouterModule, Routes } from '@angular/router';
 //Components
 import { HomeComponent } from './home/home.component';
 import { DetailsComponent } from './details/details.component';
-import { HomeModule } from './home/home.module';
-import { DetailsModule } from './details/details.module';
 
 const routes: Routes = [
   {
     path: '',
-    component: HomeModule,
+    component: HomeComponent,
   },
   {
     path: 'details/:',
-    component: DetailsModule,
+    component: DetailsComponent,
   },
 ];
 
