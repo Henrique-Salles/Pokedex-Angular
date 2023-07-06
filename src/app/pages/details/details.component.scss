@@ -6,17 +6,23 @@
     background: var(--white);
     border-radius: 0.5rem;
     gap: 0.5rem;
-    height: 67vh;
+    height: 66vh;
     justify-content: center;
     margin: 10% 2.5% 0 2.5%;
     padding: 1.5rem 1.25rem 0 1.25rem;
 
-    .about {
+    .subtitle {
       color: var(--grass);
       display: flex;
       font-size: 0.875rem;
       font-weight: 700;
       justify-content: center;
+      margin: 1rem 0 1.375rem 0;
+    }
+
+    .dex-description {
+      font-size: 0.91rem;
+      font-weight: 400;
       margin-top: 1rem;
     }
   }
