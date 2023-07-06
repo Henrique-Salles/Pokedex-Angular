@@ -1,0 +1,14 @@
+@import "../../../styles.scss";
+@import "../../../config-scss/variables.scss";
+
+:host {
+  section {
+    background: var(--white);
+    border-radius: 0.5rem;
+    gap: 0.5rem;
+    height: 78vh;
+    justify-content: center;
+    margin: 10% 2.5% 0 2.5%;
+    padding: 1.5rem 0.75rem 0 0.75rem;
+  }
+}
