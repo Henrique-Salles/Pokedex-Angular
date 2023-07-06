@@ -1,0 +1,23 @@
+@import "../../../../styles.scss";
+@import "../../../../config-scss/variables.scss";
+
+.types {
+  color: var(--white);
+  display: flex;
+  flex-direction: row;
+  font-size: 0.625;
+  font-weight: 700;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 3rem;
+  .first-type {
+    background-color: var(--grass);
+    border-radius: 0.625rem;
+    padding: 0.125rem 0.5rem;
+  }
+  .second-type {
+    background-color: var(--poison);
+    border-radius: 0.625rem;
+    padding: 0.125rem 0.5rem;
+  }
+}
