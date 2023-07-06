@@ -1,0 +1,39 @@
+@import "../../../../config-scss/variables.scss";
+@import "../../../../styles.scss";
+
+.poke-info {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-top: 1rem;
+
+  li {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+
+    .info-icon {
+      margin-right: 0.5rem;
+    }
+
+    .abilities {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+    }
+  }
+}
+
+.info-label {
+  align-items: center;
+  color: var(--medium);
+  display: flex;
+  flex-direction: row;
+  font-size: 0.9rem;
+  font-weight: 400;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 0.25rem;
+}

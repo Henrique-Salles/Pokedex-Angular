@@ -9,6 +9,15 @@
     height: 67vh;
     justify-content: center;
     margin: 10% 2.5% 0 2.5%;
-    padding: 1.5rem 0.75rem 0 0.75rem;
+    padding: 1.5rem 1.25rem 0 1.25rem;
+
+    .about {
+      color: var(--grass);
+      display: flex;
+      font-size: 0.875rem;
+      font-weight: 700;
+      justify-content: center;
+      margin-top: 1rem;
+    }
   }
 }
