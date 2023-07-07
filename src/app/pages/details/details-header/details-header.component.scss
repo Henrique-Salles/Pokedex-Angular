@@ -1,36 +1,26 @@
 @import "../../../../styles.scss";
 @import "../../../../config-scss/variables.scss";
+@import "../../../../config-scss/utilities.scss";
 
-.details-header {
-  align-items: center;
+.poke-header {
   background-size: 40%;
   color: var(--white);
-  display: flex;
   flex-direction: row;
   font-weight: 700;
   gap: 0.5rem;
   margin: 1.15rem 1rem 0 1.15rem;
-  justify-content: space-between;
 
-  .title {
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  &__title {
+    font-size: 1.5rem;
+  }
 
-    h1 {
-      font-size: 1.5rem;
-      font-weight: 700;
-    }
+  &__back-btn {
+    border: none;
+    background: none;
+  }
 
-    .back-btn {
-      border: none;
-      background: none;
-    }
-
-    p {
-      font-size: 0.75rem;
-    }
+  &__number {
+    font-size: 1rem;
   }
 }
 
