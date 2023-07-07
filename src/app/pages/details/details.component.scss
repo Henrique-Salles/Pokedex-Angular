@@ -3,7 +3,13 @@
 @import "../../../config-scss/utilities.scss";
 
 .poke-details {
-  .main {
+  &__image {
+    display: flex;
+    height: 12.5rem;
+    margin: 0 auto -6rem;
+    width: 12.5rem;
+  }
+  &__main {
     background: var(--white);
     border-radius: 0.5rem;
     gap: 0.5rem;
@@ -14,10 +20,8 @@
 
     .subtitle {
       color: var(--grass);
-      display: flex;
       font-size: 0.875rem;
       font-weight: 700;
-      justify-content: center;
       margin: 1rem 0 0.825rem 0;
     }
 
@@ -27,14 +31,8 @@
       margin-top: 1rem;
     }
   }
-  .pokemon-image {
-    display: flex;
-    height: 12.5rem;
-    margin: 0 auto -6rem;
-    width: 12.5rem;
-  }
 
-  .stats-field {
+  &__stats-field {
     margin-bottom: 1rem;
   }
 }
