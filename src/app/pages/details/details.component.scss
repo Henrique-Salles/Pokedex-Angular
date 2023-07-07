@@ -1,15 +1,16 @@
 @import "../../../styles.scss";
 @import "../../../config-scss/variables.scss";
+@import "../../../config-scss/utilities.scss";
 
 .poke-details {
   .main {
     background: var(--white);
     border-radius: 0.5rem;
     gap: 0.5rem;
-    height: 66vh;
+    height: 63vh;
     justify-content: center;
     margin: 10% 2.5% 0 2.5%;
-    padding: 1.5rem 1.25rem 0 1.25rem;
+    padding: 1.5rem 1.25rem 1.125rem 1.25rem;
 
     .subtitle {
       color: var(--grass);
@@ -17,7 +18,7 @@
       font-size: 0.875rem;
       font-weight: 700;
       justify-content: center;
-      margin: 1.5rem 0 0.825rem 0;
+      margin: 1rem 0 0.825rem 0;
     }
 
     .dex-description {
@@ -27,8 +28,13 @@
     }
   }
   .pokemon-image {
+    display: flex;
     height: 12.5rem;
+    margin: 0 auto -6rem;
     width: 12.5rem;
-    margin: 0 3.125rem -6rem 3.125rem;
+  }
+
+  .stats-field {
+    margin-bottom: 1rem;
   }
 }
