@@ -36,6 +36,11 @@
       padding-left: 2rem;
       width: 100%;
     }
+
+    .search input[type="text"]:focus {
+      outline: none;
+    }
+
     .search::-webkit-search-cancel-button {
       position: relative;
       right: 0.5rem;

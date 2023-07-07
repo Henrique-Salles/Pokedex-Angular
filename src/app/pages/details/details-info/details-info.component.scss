@@ -1,20 +1,14 @@
 @import "../../../../config-scss/variables.scss";
 @import "../../../../styles.scss";
+@import "../../../../config-scss/utilities.scss";
 
 .poke-info {
-  align-items: center;
-  display: flex;
   flex-direction: row;
   gap: 0.5rem;
-  justify-content: center;
   margin-top: 0.5rem;
 
-  li {
-    align-items: center;
-    display: flex;
-    justify-content: space-around;
-
-    .info-icon {
+  &__item {
+    &__image {
       margin-right: 0.5rem;
     }
 
@@ -26,14 +20,14 @@
   }
 }
 
-.info-label {
-  align-items: center;
-  color: var(--medium);
-  display: flex;
+.info-subtitle {
   flex-direction: row;
-  font-size: 0.9rem;
-  font-weight: 400;
   gap: 2rem;
-  justify-content: center;
   margin-top: 0.25rem;
+
+  &__item {
+    color: var(--medium);
+    font-size: 0.9rem;
+    font-weight: 400;
+  }
 }
