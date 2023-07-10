@@ -17,5 +17,6 @@
 }
 
 .inner-shadow {
-  box-shadow: inset 0px 1px 3px 1px rgba($color: #000000, $alpha: 25%);
+  box-shadow: inset 0 0.063rem 0.188rem 0.063rem
+    rgba($color: #000000, $alpha: 25%);
 }
