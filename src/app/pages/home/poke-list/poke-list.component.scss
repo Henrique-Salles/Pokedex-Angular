@@ -1,0 +1,9 @@
+@import "../../../../styles.scss";
+@import "../../../../config-scss/utilities.scss";
+@import "../../../../config-scss/variables.scss";
+
+.pokemon-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
