@@ -1,13 +1,15 @@
 <section>
   <ul class="pokemon-list">
     <li *ngFor="let pokemon of getAllPokemons">
-      <list-item
-        [order]="pokemon.status?.id"
-        [name]="pokemon.name"
-        [imageUrl]="
-          pokemon.status?.sprites.other['official-artwork'].front_default
-        "
-      ></list-item>
+      <a class="link" [routerLink]="['details', pokemon.status?.id]">
+        <list-item
+          [order]="pokemon.status?.id"
+          [name]="pokemon.name"
+          [imageUrl]="
+            pokemon.status?.sprites.other['official-artwork'].front_default
+          "
+        ></list-item>
+      </a>
     </li>
   </ul>
 </section>
