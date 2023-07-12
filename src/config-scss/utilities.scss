@@ -20,3 +20,7 @@
   box-shadow: inset 0 0.063rem 0.188rem 0.063rem
     rgba($color: #000000, $alpha: 25%);
 }
+
+.drop-shadow {
+  box-shadow: 0 0.063rem 0.188rem 0.063rem rgba($color: #000000, $alpha: 25%);
+}
