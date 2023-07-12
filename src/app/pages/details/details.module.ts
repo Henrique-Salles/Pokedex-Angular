@@ -5,10 +5,17 @@ import { DetailsHeaderComponent } from './details-header/details-header.componen
 import { DetailsTypesComponent } from './details-types/details-types.component';
 import { DetailsInfoComponent } from './details-info/details-info.component';
 import { DetailsStatsComponent } from './details-stats/details-stats.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
-  declarations: [DetailsComponent, DetailsHeaderComponent, DetailsTypesComponent, DetailsInfoComponent, DetailsStatsComponent],
-  imports: [CommonModule],
+  declarations: [
+    DetailsComponent,
+    DetailsHeaderComponent,
+    DetailsTypesComponent,
+    DetailsInfoComponent,
+    DetailsStatsComponent,
+  ],
+  imports: [CommonModule, RouterModule],
   exports: [DetailsComponent],
 })
 export class DetailsModule {}
