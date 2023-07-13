@@ -1,51 +1,51 @@
-<details-header [name]="pokemon.name" [order]="pokemon.id"></details-header>
+<ng-template [ngIf]="pokemon">
+  <details-header [name]="pokemon.name" [order]="pokemon.id"></details-header>
 
-<body class="poke-details">
-  <details-image
-    [imageUrl]="pokemon.sprites.other['official-artwork'].front_default"
-  ></details-image>
+  <body class="poke-details">
+    <details-image
+      [imageUrl]="pokemon.sprites.other['official-artwork'].front_default"
+    ></details-image>
 
-  <div class="poke-details__main">
-    <poke-types
-      [type1]="pokemon.types[0].type.name"
-      [type2]="pokemon.types[1]?.type.name"
-    ></poke-types>
-    <!-- [type1]="pokemon.types[0].type.name"
-    [type2]="pokemon.types[1].type.name" -->
-    <h2 class="subtitle centered">About</h2>
-    <poke-info
-      [weight]="pokemon.weight"
-      [height]="pokemon.height"
-      [ability1]="pokemon.abilities[0].ability.name"
-      [ability2]="pokemon.abilities[1]?.ability.name"
-    ></poke-info>
+    <div class="poke-details__main">
+      <poke-types
+        [type1]="pokemon.types[0].type.name"
+        [type2]="pokemon.types[1]?.type.name"
+      ></poke-types>
+      <h2 class="subtitle centered">About</h2>
+      <poke-info
+        [weight]="pokemon.weight"
+        [height]="pokemon.height"
+        [ability1]="pokemon.abilities[0].ability.name"
+        [ability2]="pokemon.abilities[1]?.ability.name"
+      ></poke-info>
 
-    <h2 class="status-title centered">Base Status</h2>
-    <div class="poke-details__stats-field">
-      <poke-stats
-        [stat_name]="pokemon.stats[0].stat.name"
-        [stat]="pokemon.stats[0].base_stat"
-      ></poke-stats>
-      <poke-stats
-        [stat_name]="pokemon.stats[1].stat.name"
-        [stat]="pokemon.stats[1].base_stat"
-      ></poke-stats>
-      <poke-stats
-        [stat_name]="pokemon.stats[2].stat.name"
-        [stat]="pokemon.stats[2].base_stat"
-      ></poke-stats>
-      <poke-stats
-        [stat_name]="pokemon.stats[3].stat.name"
-        [stat]="pokemon.stats[3].base_stat"
-      ></poke-stats>
-      <poke-stats
-        [stat_name]="pokemon.stats[4].stat.name"
-        [stat]="pokemon.stats[4].base_stat"
-      ></poke-stats>
-      <poke-stats
-        [stat_name]="pokemon.stats[5].stat.name"
-        [stat]="pokemon.stats[5].base_stat"
-      ></poke-stats>
+      <h2 class="status-title centered">Base Status</h2>
+      <div class="poke-details__stats-field">
+        <poke-stats
+          [stat_name]="pokemon.stats[0].stat.name"
+          [stat]="pokemon.stats[0].base_stat"
+        ></poke-stats>
+        <poke-stats
+          [stat_name]="pokemon.stats[1].stat.name"
+          [stat]="pokemon.stats[1].base_stat"
+        ></poke-stats>
+        <poke-stats
+          [stat_name]="pokemon.stats[2].stat.name"
+          [stat]="pokemon.stats[2].base_stat"
+        ></poke-stats>
+        <poke-stats
+          [stat_name]="pokemon.stats[3].stat.name"
+          [stat]="pokemon.stats[3].base_stat"
+        ></poke-stats>
+        <poke-stats
+          [stat_name]="pokemon.stats[4].stat.name"
+          [stat]="pokemon.stats[4].base_stat"
+        ></poke-stats>
+        <poke-stats
+          [stat_name]="pokemon.stats[5].stat.name"
+          [stat]="pokemon.stats[5].base_stat"
+        ></poke-stats>
+      </div>
     </div>
-  </div>
-</body>
+  </body>
+</ng-template>
