@@ -4,15 +4,14 @@
   <details-image
     [imageUrl]="pokemon.sprites.other['official-artwork'].front_default"
   ></details-image>
-  <!-- <img
-    class="poke-details__image"
-    src="../../../../assets/bulbassaur.png"
-    alt=""
-  /> -->
 
   <div class="poke-details__main">
-    <poke-types></poke-types>
-
+    <poke-types
+      [type1]="pokemon.types[0].type.name"
+      [type2]="pokemon.types[1].type.name"
+    ></poke-types>
+    <!-- [type1]="pokemon.types[0].type.name"
+    [type2]="pokemon.types[1].type.name" -->
     <h2 class="subtitle centered">About</h2>
     <poke-info
       [weight]="pokemon.weight"
