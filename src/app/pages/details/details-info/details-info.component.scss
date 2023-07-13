@@ -5,6 +5,7 @@
 .poke-info {
   flex-direction: row;
   gap: 0.5rem;
+  text-transform: capitalize;
 
   &__item {
     &__image {
