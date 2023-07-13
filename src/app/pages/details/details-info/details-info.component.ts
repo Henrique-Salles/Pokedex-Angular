@@ -8,6 +8,5 @@ import { Component, Input } from '@angular/core';
 export class DetailsInfoComponent {
   @Input() weight: string = '';
   @Input() height: string = '';
-  @Input() ability1: string = '';
-  @Input() ability2: string = '';
+  @Input() abilities: any[] = [];
 }

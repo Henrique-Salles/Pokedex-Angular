@@ -15,9 +15,9 @@
       <poke-info
         [weight]="pokemon.weight"
         [height]="pokemon.height"
-        [ability1]="pokemon.abilities[0].ability.name"
-        [ability2]="pokemon.abilities[1]?.ability.name"
-      ></poke-info>
+        [abilities]="pokemon.abilities"
+      >
+      </poke-info>
 
       <h2 class="status-title centered">Base Status</h2>
       <div class="poke-details__stats-field">

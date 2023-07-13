@@ -23,8 +23,9 @@
 
   <li class="poke-info__item centered">
     <ul class="abilities">
-      <li>{{ ability1 }}</li>
-      <li>{{ ability2 }}</li>
+      <li *ngFor="let ability of abilities">
+        {{ ability.ability.name }}
+      </li>
     </ul>
   </li>
 </ul>
