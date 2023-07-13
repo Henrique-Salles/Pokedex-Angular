@@ -6,6 +6,7 @@ import { DetailsTypesComponent } from './details-types/details-types.component';
 import { DetailsInfoComponent } from './details-info/details-info.component';
 import { DetailsStatsComponent } from './details-stats/details-stats.component';
 import { RouterModule } from '@angular/router';
+import { DetailsImageComponent } from './details-image/details-image/details-image.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { RouterModule } from '@angular/router';
     DetailsTypesComponent,
     DetailsInfoComponent,
     DetailsStatsComponent,
+    DetailsImageComponent,
   ],
   imports: [CommonModule, RouterModule],
   exports: [DetailsComponent],
