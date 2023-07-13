@@ -6,33 +6,39 @@
   color: var(--grass);
   font-weight: 700;
   height: 1.5rem;
+  margin-bottom: 0.75rem;
+
+  & :hover {
+    background: var(--light);
+  }
 
   &__name {
-    border-right: 0.063rem solid var(--light);
     font-size: 1rem;
     padding-right: 0.75rem;
+    width: 7rem;
+    // border-right: 0.063rem solid var(--light);
   }
 
   &__value {
     color: var(--grass);
-    padding: 0 0.75rem 0 0.75rem;
   }
 
   input[type="range"] {
     -webkit-appearance: none;
-    width: 12.5rem;
+    max-width: 12.5rem;
     height: 0.438rem;
     background: var(--light-grass);
     border-radius: 0.313rem;
     background-image: linear-gradient(var(--grass), var(--grass));
     background-size: 2.813rem;
     background-repeat: no-repeat;
+    margin-left: 0.75rem;
   }
 
-  input[type="range"]::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    display: none;
-  }
+  // input[type="range"]::-webkit-slider-thumb {
+  //   -webkit-appearance: none;
+  //   display: none;
+  // }
   input[type="range"]::-webkit-slider-runnable-track {
     -webkit-appearance: none;
     box-shadow: none;

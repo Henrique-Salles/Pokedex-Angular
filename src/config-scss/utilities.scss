@@ -16,6 +16,12 @@
   justify-content: left;
 }
 
+.right {
+  align-items: center;
+  display: flex;
+  justify-content: right;
+}
+
 .inner-shadow {
   box-shadow: inset 0 0.063rem 0.188rem 0.063rem
     rgba($color: #000000, $alpha: 25%);

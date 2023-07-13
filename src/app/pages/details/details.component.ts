@@ -50,5 +50,4 @@ export class DetailsComponent implements OnInit {
       console.log(res);
     });
   }
-  @Input() imageUrl: string = '';
 }

@@ -8,7 +8,7 @@
   <div class="poke-details__main">
     <poke-types
       [type1]="pokemon.types[0].type.name"
-      [type2]="pokemon.types[1].type.name"
+      [type2]="pokemon.types[1]?.type.name"
     ></poke-types>
     <!-- [type1]="pokemon.types[0].type.name"
     [type2]="pokemon.types[1].type.name" -->
@@ -17,15 +17,10 @@
       [weight]="pokemon.weight"
       [height]="pokemon.height"
       [ability1]="pokemon.abilities[0].ability.name"
-      [ability2]="pokemon.abilities[1].ability.name"
+      [ability2]="pokemon.abilities[1]?.ability.name"
     ></poke-info>
 
-    <p class="dex-description centered">
-      There is a plant seed on its back right from the day this Pokémon is born.
-      The seed slowly grows larger.
-    </p>
-
-    <h2 class="subtitle centered">Base Status</h2>
+    <h2 class="status-title centered">Base Status</h2>
     <div class="poke-details__stats-field">
       <poke-stats
         [stat_name]="pokemon.stats[0].stat.name"
