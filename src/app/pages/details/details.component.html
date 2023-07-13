@@ -1,4 +1,4 @@
-<details-header></details-header>
+<details-header [name]="pokemon.name" [order]="pokemon.id"></details-header>
 
 <body class="poke-details">
   <img
@@ -11,7 +11,7 @@
     <poke-types></poke-types>
 
     <h2 class="subtitle centered">About</h2>
-    <poke-info></poke-info>
+    <poke-info [weight]="pokemon.weight" [height]="pokemon.height"></poke-info>
 
     <p class="dex-description centered">
       There is a plant seed on its back right from the day this Pokémon is born.
