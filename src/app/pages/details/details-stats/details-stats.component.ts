@@ -6,6 +6,5 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./details-stats.component.scss'],
 })
 export class DetailsStatsComponent {
-  @Input() stat_name: string = '';
-  @Input() stat: number = 0;
+  @Input() stats: any[] = [];
 }

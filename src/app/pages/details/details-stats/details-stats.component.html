@@ -1,5 +1,15 @@
-<div class="poke-stat centered">
-  <p class="poke-stat__name">{{ stat_name }}</p>
-  <p class="poke-stat__value right">{{ stat }}</p>
-  <input type="range" class="stat" min="0" max="200" value="{{ stat }}" />
-</div>
+<ul>
+  <li *ngFor="let stat of stats">
+    <div class="poke-stat centered">
+      <p class="poke-stat__name">{{ stat.stat.name }}</p>
+      <p class="poke-stat__value right">{{ stat.base_stat }}</p>
+      <input
+        type="range"
+        class="stat"
+        min="0"
+        max="200"
+        value="{{ stat.base_stat }}"
+      />
+    </div>
+  </li>
+</ul>

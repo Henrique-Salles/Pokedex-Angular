@@ -18,30 +18,7 @@
 
       <h2 class="status-title centered">Base Status</h2>
       <div class="poke-details__stats-field">
-        <poke-stats
-          [stat_name]="pokemon.stats[0].stat.name"
-          [stat]="pokemon.stats[0].base_stat"
-        ></poke-stats>
-        <poke-stats
-          [stat_name]="pokemon.stats[1].stat.name"
-          [stat]="pokemon.stats[1].base_stat"
-        ></poke-stats>
-        <poke-stats
-          [stat_name]="pokemon.stats[2].stat.name"
-          [stat]="pokemon.stats[2].base_stat"
-        ></poke-stats>
-        <poke-stats
-          [stat_name]="pokemon.stats[3].stat.name"
-          [stat]="pokemon.stats[3].base_stat"
-        ></poke-stats>
-        <poke-stats
-          [stat_name]="pokemon.stats[4].stat.name"
-          [stat]="pokemon.stats[4].base_stat"
-        ></poke-stats>
-        <poke-stats
-          [stat_name]="pokemon.stats[5].stat.name"
-          [stat]="pokemon.stats[5].base_stat"
-        ></poke-stats>
+        <poke-stats [stats]="pokemon.stats"></poke-stats>
       </div>
     </div>
   </body>
