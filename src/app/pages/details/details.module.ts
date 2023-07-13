@@ -7,6 +7,7 @@ import { DetailsInfoComponent } from './details-info/details-info.component';
 import { DetailsStatsComponent } from './details-stats/details-stats.component';
 import { RouterModule } from '@angular/router';
 import { DetailsImageComponent } from './details-image/details-image/details-image.component';
+import { FormatNumberPipe } from './pipes/format-number.pipe';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { DetailsImageComponent } from './details-image/details-image/details-ima
     DetailsInfoComponent,
     DetailsStatsComponent,
     DetailsImageComponent,
+    FormatNumberPipe,
   ],
   imports: [CommonModule, RouterModule],
   exports: [DetailsComponent],
