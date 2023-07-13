@@ -6,6 +6,5 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./details-types.component.scss'],
 })
 export class DetailsTypesComponent {
-  @Input() type1: string = '';
-  @Input() type2: string = '';
+  @Input() types: any[] = [];
 }

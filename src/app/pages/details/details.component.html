@@ -7,10 +7,7 @@
     ></details-image>
 
     <div class="poke-details__main">
-      <poke-types
-        [type1]="pokemon.types[0].type.name"
-        [type2]="pokemon.types[1]?.type.name"
-      ></poke-types>
+      <poke-types [types]="pokemon.types"></poke-types>
       <h2 class="subtitle centered">About</h2>
       <poke-info
         [weight]="pokemon.weight"

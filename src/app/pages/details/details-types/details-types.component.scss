@@ -2,7 +2,7 @@
 @import "../../../../config-scss/variables.scss";
 @import "../../../../config-scss/utilities.scss";
 
-.poke-types {
+.types-list {
   color: var(--white);
   flex-direction: row;
   font-size: 0.625;
@@ -10,14 +10,8 @@
   gap: 1rem;
   margin-top: 3rem;
 
-  &__first {
-    background-color: var(--grass);
-  }
-  &__second {
-    background-color: var(--poison);
-  }
-  &__first,
-  &__second {
+  .type {
+    background-color: var(--primary-color);
     border-radius: 0.625rem;
     padding: 0.125rem 0.5rem;
   }
