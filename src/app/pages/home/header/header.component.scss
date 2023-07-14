@@ -15,18 +15,6 @@
     gap: 1rem;
     margin: 0.5rem 0 0 1.15rem;
 
-    .search {
-      background-image: url("../../../../assets/icons/search.svg");
-      background-position: 0.5rem 0.6rem;
-      background-repeat: no-repeat;
-      border: none;
-      border-radius: 1rem;
-      color: var(--medium);
-      height: 2rem;
-      padding-left: 2rem;
-      width: 100%;
-    }
-
     .search input[type="text"]:focus {
       outline: none;
     }
