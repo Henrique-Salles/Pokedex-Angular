@@ -27,7 +27,7 @@ export class PokeListComponent implements OnInit {
     );
   }
 
-  public getSearch(value: any) {
+  public getSearch(value: string) {
     const filter = this.setAllPokemons.filter((res: any) => {
       return !res.name.indexOf(value.toLowerCase());
     });
