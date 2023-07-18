@@ -1,6 +1,21 @@
-<poke-search (emitSearch)="getSearch($event)"></poke-search>
-<button (click)="sort()"></button>
-<button (click)="teste()"></button>
+<form class="list-form between">
+  <poke-search (emitSearch)="getSearch($event)"></poke-search>
+  <button class="list-form__sort inner-shadow" type="button" (click)="sort()">
+    <img
+      class="btn__image"
+      src="../../../../assets/icons/pokemon-number.svg"
+      alt=""
+    />
+  </button>
+  <button class="list-form__sort inner-shadow" type="button" (click)="teste()">
+    <img
+      class="btn__image"
+      src="../../../../assets/icons/pokemon-number.svg"
+      alt=""
+    />
+  </button>
+</form>
+
 <ul class="pokemon-list">
   <li *ngFor="let pokemon of getAllPokemons">
     <a class="link" [routerLink]="['details', pokemon.status?.id]">
