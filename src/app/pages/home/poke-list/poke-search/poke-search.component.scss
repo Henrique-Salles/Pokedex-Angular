@@ -11,7 +11,7 @@
   color: var(--medium);
   height: 2rem;
   margin-bottom: 1.5rem;
-  padding-left: 2rem;
+  padding: 0 1rem 0 2rem;
   width: 100%;
 
   :focus {
@@ -19,7 +19,6 @@
   }
 
   &::-webkit-search-cancel-button {
-    position: relative;
-    right: 0.5rem;
+    display: none;
   }
 }

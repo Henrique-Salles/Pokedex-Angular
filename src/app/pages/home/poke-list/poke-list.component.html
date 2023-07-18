@@ -1,19 +1,16 @@
-<form class="list-form between">
+<form class="list-form evenly">
   <poke-search (emitSearch)="getSearch($event)"></poke-search>
-  <button class="list-form__sort inner-shadow" type="button" (click)="sort()">
-    <img
-      class="btn__image"
-      src="../../../../assets/icons/pokemon-number.svg"
-      alt=""
-    />
-  </button>
-  <button class="list-form__sort inner-shadow" type="button" (click)="teste()">
-    <img
-      class="btn__image"
-      src="../../../../assets/icons/pokemon-number.svg"
-      alt=""
-    />
-  </button>
+  <button
+    class="list-form__sort inner-shadow"
+    id="btn"
+    type="button"
+    (click)="ordenate()"
+    [ngStyle]="
+      this.checkOrder == true
+        ? { 'background-image': 'url(' + imageUrl2 + ')' }
+        : { 'background-image': 'url(' + imageUrl + ')' }
+    "
+  ></button>
 </form>
 
 <ul class="pokemon-list">

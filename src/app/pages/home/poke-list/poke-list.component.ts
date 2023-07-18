@@ -11,6 +11,10 @@ export class PokeListComponent implements OnInit {
   public getAllPokemons: any;
 
   public apiError: boolean = false;
+  public checkOrder: boolean = true;
+
+  public imageUrl = '../../../../assets/icons/sort.png';
+  public imageUrl2 = '../../../../assets/icons/unsort.png';
 
   constructor(private pokeApiService: PokeApiService) {}
 
@@ -36,13 +40,19 @@ export class PokeListComponent implements OnInit {
     });
   }
 
-  public teste() {
+  public unsort() {
     const sortedPokemons = this.getAllPokemons.sort(function (
       firstItem: any,
       secondItem: any
     ) {
       return firstItem.status?.id - secondItem.status?.id;
     });
+  }
+
+  public ordenate(): void {
+    if (this.checkOrder) this.sort();
+    else this.unsort();
+    this.checkOrder = !this.checkOrder;
   }
 
   public getSearch(value: string) {
