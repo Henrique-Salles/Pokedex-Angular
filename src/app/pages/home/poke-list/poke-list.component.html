@@ -1,16 +1,16 @@
 <poke-search (emitSearch)="getSearch($event)"></poke-search>
-<section>
-  <ul class="pokemon-list">
-    <li *ngFor="let pokemon of getAllPokemons">
-      <a class="link" [routerLink]="['details', pokemon.status?.id]">
-        <list-item
-          [order]="pokemon.status?.id"
-          [name]="pokemon.name"
-          [imageUrl]="
-            pokemon.status?.sprites.other['official-artwork'].front_default
-          "
-        ></list-item>
-      </a>
-    </li>
-  </ul>
-</section>
+<button (click)="sort()"></button>
+<button (click)="teste()"></button>
+<ul class="pokemon-list">
+  <li *ngFor="let pokemon of getAllPokemons">
+    <a class="link" [routerLink]="['details', pokemon.status?.id]">
+      <list-item
+        [order]="pokemon.status?.id"
+        [name]="pokemon.name"
+        [imageUrl]="
+          pokemon.status?.sprites.other['official-artwork'].front_default
+        "
+      ></list-item>
+    </a>
+  </li>
+</ul>

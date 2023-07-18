@@ -27,6 +27,24 @@ export class PokeListComponent implements OnInit {
     );
   }
 
+  public sort() {
+    const sortedPokemons = this.getAllPokemons.sort(function (
+      firstItem: any,
+      secondItem: any
+    ) {
+      return secondItem.status?.id - firstItem.status?.id;
+    });
+  }
+
+  public teste() {
+    const sortedPokemons = this.getAllPokemons.sort(function (
+      firstItem: any,
+      secondItem: any
+    ) {
+      return firstItem.status?.id - secondItem.status?.id;
+    });
+  }
+
   public getSearch(value: string) {
     const filter = this.setAllPokemons.filter((res: any) => {
       return !res.name.indexOf(value.toLowerCase());
