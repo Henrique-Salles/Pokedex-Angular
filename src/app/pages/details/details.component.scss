@@ -1,14 +1,9 @@
 @import "../../../styles.scss";
 @import "../../../config-scss/variables.scss";
 @import "../../../config-scss/utilities.scss";
+@import "../../../config-scss/types.scss";
 
 .poke-details {
-  &__image {
-    display: flex;
-    height: 12.5rem;
-    margin: 0 auto -6rem;
-    width: 12.5rem;
-  }
   &__main {
     background: var(--white);
     border-radius: 0.5rem;
@@ -19,14 +14,12 @@
     padding: 1.5rem 1.25rem 1.125rem 1.25rem;
 
     .subtitle {
-      color: var(--primary-color);
       font-size: 0.875rem;
       font-weight: 700;
       margin: 1rem 0 0.5rem 0;
     }
 
     .status-title {
-      color: var(--primary-color);
       font-size: 0.875rem;
       font-weight: 700;
       margin: 1.5rem 0 0.825rem 0;

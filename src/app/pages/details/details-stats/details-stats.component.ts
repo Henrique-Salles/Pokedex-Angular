@@ -7,4 +7,5 @@ import { Component, Input } from '@angular/core';
 })
 export class DetailsStatsComponent {
   @Input() stats: any[] = [];
+  @Input() types: any[] = [];
 }

@@ -1,5 +1,127 @@
 @import "../config-scss/variables.scss";
+
+.bug {
+  background-color: var(--bug);
+  &__color {
+    color: var(--bug);
+  }
+}
+
+.dark {
+  background-color: var(--dark);
+  &__color {
+    color: var(--dark);
+  }
+}
+
+.dragon {
+  background-color: var(--dragon);
+  &__color {
+    color: var(--dragon);
+  }
+}
+
+.electric {
+  background-color: var(--electric);
+  &__color {
+    color: var(--electric);
+  }
+}
+
+.fairy {
+  background-color: var(--fairy);
+  &__color {
+    color: var(--fairy);
+  }
+}
+
+.fighting {
+  background-color: var(--fighting);
+  &__color {
+    color: var(--fighting);
+  }
+}
+
+.fire {
+  background-color: var(--fire);
+  &__color {
+    color: var(--fire);
+  }
+}
+
+.flying {
+  background-color: var(--flying);
+  &__color {
+    color: var(--flying);
+  }
+}
+
+.ghost {
+  background-color: var(--ghost);
+  &__color {
+    color: var(--ghost);
+  }
+}
+
 .grass {
   background-color: var(--grass);
-  color: var(--white);
+  &__color {
+    color: var(--grass);
+  }
+}
+
+.ground {
+  background-color: var(--ground);
+  &__color {
+    color: var(--ground);
+  }
+}
+
+.ice {
+  background-color: var(--ice);
+  &__color {
+    color: var(--ice);
+  }
+}
+
+.normal {
+  background-color: var(--normal);
+  &__color {
+    color: var(--normal);
+  }
+}
+
+.poison {
+  background-color: var(--poison);
+  &__color {
+    color: var(--poison);
+  }
+}
+
+.psychic {
+  background-color: var(--psychic);
+  &__color {
+    color: var(--psychic);
+  }
+}
+
+.rock {
+  background-color: var(--rock);
+  &__color {
+    color: var(--rock);
+  }
+}
+
+.steel {
+  background-color: var(--steel);
+  &__color {
+    color: var(--steel);
+  }
+}
+
+.water {
+  background-color: var(--water);
+  &__color {
+    color: var(--water);
+  }
 }
