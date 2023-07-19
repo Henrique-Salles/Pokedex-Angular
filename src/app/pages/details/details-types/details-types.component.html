@@ -1,6 +1,6 @@
 <div>
   <ul class="types-list centered">
-    <li class="type" *ngFor="let type of types">
+    <li class="type {{ type.type.name }}" *ngFor="let type of types">
       {{ type.type.name }}
     </li>
   </ul>

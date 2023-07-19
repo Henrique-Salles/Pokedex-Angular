@@ -20,30 +20,8 @@
 
   &__value {
     color: var(--primary-color);
+    min-width: 2rem;
   }
-
-  // input[type="range"] {
-  //   -webkit-appearance: none;
-  //   max-width: 12.5rem;
-  //   height: 0.438rem;
-  //   background: var(--primary-color);
-  //   border-radius: 0.313rem;
-  //   background-image: linear-gradient(var(--grass), var(--grass));
-  //   // background-size: 2.813rem;
-  //   // background-repeat: no-repeat;
-  //   margin-left: 0.75rem;
-  // }
-
-  // input[type="range"]::-webkit-slider-thumb {
-  //   -webkit-appearance: none;
-  //   display: none;
-  // }
-  // input[type="range"]::-webkit-slider-runnable-track {
-  //   -webkit-appearance: none;
-  //   box-shadow: none;
-  //   border: none;
-  //   background: transparent;
-  // }
 
   input[type="range"] {
     -webkit-appearance: none;

@@ -1,6 +1,7 @@
 @import "../../../../styles.scss";
 @import "../../../../config-scss/variables.scss";
 @import "../../../../config-scss/utilities.scss";
+@import "../../../../config-scss/types.scss";
 
 .types-list {
   color: var(--white);
@@ -11,9 +12,9 @@
   margin-top: 3rem;
 
   .type {
-    background-color: var(--primary-color);
     border-radius: 0.625rem;
     padding: 0.125rem 0.5rem;
     text-transform: capitalize;
+    color: var(--white);
   }
 }
