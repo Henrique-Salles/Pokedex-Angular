@@ -4,13 +4,10 @@
 
 .poke-info {
   flex-direction: row;
-  gap: 0.5rem;
   text-transform: capitalize;
 
   &__item {
-    &__image {
-      margin-right: 0.5rem;
-    }
+    min-width: 5.863rem;
 
     .abilities {
       display: flex;
@@ -22,12 +19,11 @@
 
 .info-subtitle {
   flex-direction: row;
-  gap: 2.5rem;
   margin-top: 0.25rem;
-
   &__item {
     color: var(--medium);
     font-size: 0.9rem;
     font-weight: 400;
+    min-width: 3.471rem;
   }
 }
