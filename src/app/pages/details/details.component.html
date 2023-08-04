@@ -1,4 +1,4 @@
-<div class="{{ pokemon.types[0].type.name }} main-content">
+<div class="main-content">
   <ng-template [ngIf]="pokemon">
     <details-header [name]="pokemon.name" [order]="pokemon.id"></details-header>
 
@@ -7,29 +7,33 @@
         [imageUrl]="pokemon.sprites.other['official-artwork'].front_default"
       ></details-image>
 
-      <div class="poke-details__main">
-        <poke-types [types]="pokemon.types"></poke-types>
-        <h2 class="subtitle {{ pokemon.types[0].type.name }}__color centered">
-          About
-        </h2>
-        <poke-info
-          [weight]="pokemon.weight"
-          [height]="pokemon.height"
-          [abilities]="pokemon.abilities"
-        ></poke-info>
+      <section>
+        <div class="poke-details__main">
+          <poke-types [types]="pokemon.types"></poke-types>
+          <h2 class="subtitle {{ pokemon.types[0].type.name }}__color centered">
+            About
+          </h2>
+          <poke-info
+            [weight]="pokemon.weight"
+            [height]="pokemon.height"
+            [abilities]="pokemon.abilities"
+          ></poke-info>
 
-        <h2
-          class="status-title {{ pokemon.types[0].type.name }}__color centered"
-        >
-          Base Status
-        </h2>
-        <div class="poke-details__stats-field">
-          <poke-stats
-            [stats]="pokemon.stats"
-            [types]="pokemon.types"
-          ></poke-stats>
+          <h2
+            class="status-title {{
+              pokemon.types[0].type.name
+            }}__color centered"
+          >
+            Base Status
+          </h2>
+          <div class="poke-details__stats-field">
+            <poke-stats
+              [stats]="pokemon.stats"
+              [types]="pokemon.types"
+            ></poke-stats>
+          </div>
         </div>
-      </div>
+      </section>
     </body>
   </ng-template>
 </div>
